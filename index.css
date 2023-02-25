@@ -1,0 +1,17 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 80vh;
+    height: 80vh;
+    gap: 1px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.board_cell.black_cell {
+    background-color: black;
+}
+
+.board_cell {
+    background-color: white;
+}
