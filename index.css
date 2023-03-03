@@ -8,10 +8,33 @@
     box-sizing: border-box;
 }
 
+/* cells */
+.board_cell {
+    background-color: white;
+    overflow: hidden;
+}
+
 .board_cell.black_cell {
     background-color: black;
 }
 
-.board_cell {
-    background-color: white;
+.highlight {
+    box-shadow: inset 0 0 15px 5px #00ff6c;
+}
+
+/* figure */
+.figure {
+    width: 100%;
+    height: 100%;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform 0.3s;
+    transform-origin: bottom;
+    filter: drop-shadow(4px -2px 3px rgba(0, 0, 0, 0.4));
+}
+
+.figure.picked {
+    transform: scale(1.1);
 }
